@@ -6,6 +6,7 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
+import javax.swing.GroupLayout.Group;
 
 /**
  * The tool to select, move and delete Shapes in the Drawing
@@ -17,6 +18,7 @@ public class SelectionTool
 	extends DrawingTool {
 	private Shape mySelectedShape = null;
 	private Point myLastPoint;
+        private Group MyGroup;
 
 	public SelectionTool(DrawingPanel panel) {
 		super(panel);
